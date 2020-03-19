@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blue Bird Paint</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./css/landingPageStyle.css">
+    <!-- whatsappApi-->
+    <link rel="stylesheet" href="./css/whatsappApiStyle.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <!-- AnimeJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<!-- <body oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;"> -->
+    <body>
+<!--Whatsapp Api-->
+<div class="nav-bottom">
+    <div class="popup-whatsapp fadeIn">
+        <div class="content-whatsapp -top"><button type="button" class="closePopup">
+            <i class="material-icons icon-font-color">close</i>
+        </button>
+        </div>
+        <div class="content-whatsapp -bottom">
+            <input class="whats-input" id="whats-in" type="text" Placeholder="Blue Bird Paint Chat" />
+            <button class="send-msPopup" id="send-btn" type="button">
+                <i class="material-icons icon-font-color--black">send</i>
+            </button>
+
+        </div>
+    </div>
+    <button type="button" id="whats-openPopup" class="whatsapp-button">
+        <img class="icon-whatsapp" src="./img/WhatsApp.svg">
+    </button>
+    <div class="circle-anime"></div>
+</div>
+<!--End Whatsapp Api-->
+<div class="container">
+
+    <div class="loading-screen"></div>
+
+    <div class="loader">
+        <div class="ringOne ring">
+            <img src="./img/image-asset2.png" alt="">
+        </div>
+        <!-- <div class="ringTwo ring">
+            <img src="./img/image-asset2.png" alt="">
+        </div> -->
+    </div>
+
+</div>
+
+<div class="logo">
+    <!-- <ion-icon name="git-compare"></ion-icon> -->
+    <!-- <a href="index.html" style="color:black;">Blue Bird Paint</a> -->
+    <img src="Logo.png" alt="" style="width: 10%; height: 10%; padding: 20px;">
+</div>
+
+    <div class="contact">
+        <a style="color: #f26b40">Blue</a>
+        <a style="color: #ffeb46">Bird</a>
+        <a style="color: #56caf4">Paints</a>
+    </div>
+
+<div class="menu"><ion-icon name="git-compare"></ion-icon></div>
+
+<div class="header">
+
+    <h1 class="ml7" id="title">
+                  <span class="text-wrapper">
+                        <span class="letters" style="color: whitesmoke;">Blue Bird Paints</span>
+                  </span>
+    </h1>
+    <h2 id="tagline" class="p1" style="color: white;">Luxurious paint finishes for any room, making you feel at home.</h2>
+    <div class="buttons">
+        <button id="two" src="">MORE!</button>
+    </div>
+</div>
+<div class="bottom-text">
+    <a href="#">About</a>/<a href="#">Products</a>/<a href="#">News</a>/<a href="#">Contact</a>
+</div>
+<div class="copyright">Website by © <a href="http://zerolanddigital.com" style="color: white">Zeroland Digital</a></div>
+<div class="media">
+    <ul>
+        <li><a href="" style="color: white;"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="" style="color: white;"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="" style="color: white;"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="" style="color: white;"><ion-icon name="logo-youtube"></ion-icon></a></li>
+    </ul>
+</div>
+<!-- js -->
+<script src="./js/landingPageScript.js"></script>
+<!--Whatsapp Api-->
+<script src="./js/whatsappApi.js"></script>
+<!--disable inspect-->
+<script>
+    document.onkeydown = function(e) {
+        if(event.keyCode == 123) {
+            return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+            return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+            return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+            return false;
+        }
+    }
+</script>
+</body>
+</html>
